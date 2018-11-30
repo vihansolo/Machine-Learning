@@ -33,14 +33,12 @@ nClasses = 10
 batchSize = 10
 
 # height X width
-
 x = tf.placeholder('float', [None, 784])
 y = tf.placeholder('float')
 
 def neuralNetworkModel (data) :
 
-    # (inputData * weights) + biases 
-
+    # (inputData * weights) + biases
     hidden1Layer = {'weights' : tf.Variable(tf.random_normal([784, nNodesHl1])),
                     'biases' : tf.Variable(tf.random_normal([nNodesHl1]))}
 
